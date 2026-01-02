@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html-root">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Chattha Brothers Rims & Tyres | چٹھہ برادرز رمز اینڈ ٹائرز</title>
+    <meta name="description" content="Rawalpindi's trusted tire and rim dealer. New & used tyres, alloy rims, wheel balancing, and professional fitting services."/>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff"/>
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"/>
+    <meta name="referrer" content="strict-origin-when-cross-origin"/>
+    
+    <!-- Content Security Policy - Allows only trusted sources -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        img-src 'self' data: https://lh3.googleusercontent.com https://*.google.com https://*.googleapis.com https://images.unsplash.com;
+        frame-src https://www.google.com https://maps.google.com;
+        connect-src 'self';
+    "/>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f59e0b",
+                        "primary-dark": "#d97706",
+                        "accent": "#1e3a5f",
+                        "bg-main": "#0f172a",
+                        "bg-secondary": "#1e293b",
+                        "surface": "#334155",
+                    },
+                    fontFamily: {
+                        "display": ["Archivo Black", "sans-serif"],
+                        "body": ["DM Sans", "sans-serif"],
+                        "urdu": ["Noto Nastaliq Urdu", "serif"],
+                    },
+                },
+            },
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'DM Sans', sans-serif; }
+        .font-display { font-family: 'Archivo Black', sans-serif; }
+        .urdu-text { font-family: 'Noto Nastaliq Urdu', serif; line-height: 2; }
+        .font-urdu { font-family: 'Noto Nastaliq Urdu', serif; }
+        
+        /* Hide elements based on language */
+        [lang="ur"] .en-only { display: none !important; }
+        [lang="ur"] .ur-only { display: block !important; }
+        [lang="en"] .ur-only { display: none !important; }
+        [lang="en"] .en-only { display: block !important; }
+        
+        /* RTL support for Urdu */
+        [lang="ur"] { direction: rtl; }
+        [lang="ur"] .rtl-flip { transform: scaleX(-1); }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Material icons */
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1e293b; }
+        ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+        
+        /* Tire pattern background */
+        .tire-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L35 10L30 20L25 10L30 0zM0 30L10 25L20 30L10 35L0 30zM60 30L50 35L40 30L50 25L60 30zM30 60L25 50L30 40L35 50L30 60z' fill='%23f59e0b' fill-opacity='0.05'/%3E%3C/svg%3E");
+        }
+        
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(135deg, #f59e0b, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Glow effect */
+        .glow-amber {
+            box-shadow: 0 0 40px rgba(245, 158, 11, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-bg-main text-gray-100 antialiased overflow-x-hidden">
+    
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 w-full border-b border-gray-700/50 bg-bg-main/95 backdrop-blur-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3">
+                    <div class="relative">
+                        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-bg-main text-xl">tire_repair</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold tracking-tight text-white en-only">Chattha Brothers</h1>
+                        <h1 class="text-lg font-bold tracking-tight text-white ur-only font-urdu">چٹھہ برادرز</h1>
+                        <p class="text-xs text-primary -mt-1 en-only">Rims & Tyres</p>
+                        <p class="text-xs text-primary -mt-1 ur-only font-urdu">رمز اینڈ ٹائرز</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-6">
+                    <a href="#products" class="text-sm font-medium text-gray-300 hover:text-primary transition-colors en-only">Products</a>
+                    <a href="#products" class="text-sm font-medium text-gray-300 hover:text-primary transition-colors ur-only font-urdu">مصنوعات</a>
+                    
+                    <a href="#services" class="text-sm font-medium text-gray-300 hover:text-primary transition-colors en-only">Services</a>
+                    <a href="#services" class="text-sm font-medium text-gray-300 hover:text-primary transition-colors ur-only font-urdu">خدمات</a>
+                    
+                    <a href="#reviews" class="text-sm font-medium text-gray-300 hover:text-primary transition-colors en-only">Reviews</a>
+                    <a href="#reviews" class="text-sm font-medium text-gray-300 hover:text-primary transition-colors ur-only font-urdu">جائزے</a>
+                    
+                    <a href="#contact" class="text-sm font-medium text-gray-300 hover:text-primary transition-colors en-only">Contact</a>
+                    <a href="#contact" class="text-sm font-medium text-gray-300 hover:text-primary transition-colors ur-only font-urdu">رابطہ</a>
+                </nav>
+                
+                <!-- Actions -->
+                <div class="flex items-center gap-3">
+                    <!-- Language Toggle -->
+                    <button id="lang-toggle" class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface hover:bg-gray-600 text-sm font-medium transition-colors">
+                        <span class="material-symbols-outlined text-lg">language</span>
+                        <span class="en-only">اردو</span>
+                        <span class="ur-only">English</span>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-400 hover:text-primary">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-bg-secondary border-t border-gray-700 px-4 py-4">
+            <nav class="flex flex-col gap-4">
+                <a href="#products" class="text-sm font-medium hover:text-primary en-only">Products</a>
+                <a href="#products" class="text-sm font-medium hover:text-primary ur-only font-urdu">مصنوعات</a>
+                <a href="#services" class="text-sm font-medium hover:text-primary en-only">Services</a>
+                <a href="#services" class="text-sm font-medium hover:text-primary ur-only font-urdu">خدمات</a>
+                <a href="#reviews" class="text-sm font-medium hover:text-primary en-only">Reviews</a>
+                <a href="#reviews" class="text-sm font-medium hover:text-primary ur-only font-urdu">جائزے</a>
+                <a href="#contact" class="text-sm font-medium hover:text-primary en-only">Contact</a>
+                <a href="#contact" class="text-sm font-medium hover:text-primary ur-only font-urdu">رابطہ</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-bg-main py-16 sm:py-24 tire-pattern overflow-hidden">
+            <!-- Decorative elements -->
+            <div class="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+            
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Content -->
+                    <div class="flex flex-col gap-6">
+                        <div class="flex flex-col gap-4">
+                            <!-- Badge -->
+                            <div class="inline-flex items-center gap-2 bg-primary/20 text-primary px-4 py-2 rounded-full w-fit text-sm font-semibold">
+                                <span class="material-symbols-outlined text-lg">verified</span>
+                                <span class="en-only">Trusted Since Years</span>
+                                <span class="ur-only font-urdu">برسوں سے قابل اعتماد</span>
+                            </div>
+                            
+                            <!-- English Content -->
+                            <div class="en-only">
+                                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display leading-tight tracking-tight text-white">
+                                    Premium<br/>
+                                    <span class="gradient-text">Rims & Tyres</span>
+                                </h2>
+                                <p class="text-lg text-gray-400 max-w-lg leading-relaxed mt-6">
+                                    Your one-stop destination for new and used tyres, alloy rims, and professional fitting services in Rawalpindi. Wholesale rates available.
+                                </p>
+                            </div>
+                            
+                            <!-- Urdu Content -->
+                            <div class="ur-only">
+                                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display leading-tight tracking-tight text-white font-urdu">
+                                    پریمیم<br/>
+                                    <span class="gradient-text font-urdu">رمز اور ٹائرز</span>
+                                </h2>
+                                <p class="text-lg text-gray-400 max-w-lg leading-relaxed mt-6 font-urdu">
+                                    راولپنڈی میں نئے اور استعمال شدہ ٹائرز، ایلوئے رمز، اور پیشہ ورانہ فٹنگ خدمات کے لیے آپ کی واحد منزل۔ ہول سیل ریٹ دستیاب ہیں۔
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="tel:+923335167974" class="flex items-center justify-center h-14 px-8 rounded-xl bg-primary hover:bg-primary-dark text-bg-main text-base font-bold shadow-lg shadow-primary/30 transition-all hover:scale-105">
+                                <span class="material-symbols-outlined mr-2">call</span>
+                                <span class="en-only">Call Now</span>
+                                <span class="ur-only font-urdu">ابھی کال کریں</span>
+                            </a>
+                            <a href="https://wa.me/923335167974" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center h-14 px-8 rounded-xl bg-green-600 hover:bg-green-700 text-white text-base font-bold transition-all hover:scale-105">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                WhatsApp
+                            </a>
+                        </div>
+                        
+                        <!-- Trust Indicators -->
+                        <div class="flex flex-wrap items-center gap-6 text-sm text-gray-400 mt-4">
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary">local_shipping</span>
+                                <span class="en-only">Delivery Available</span>
+                                <span class="ur-only font-urdu">ڈلیوری دستیاب</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary">storefront</span>
+                                <span class="en-only">In-Store Pickup</span>
+                                <span class="ur-only font-urdu">اسٹور سے پک اپ</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary">sell</span>
+                                <span class="en-only">Wholesale Rates</span>
+                                <span class="ur-only font-urdu">ہول سیل ریٹ</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero Image -->
+                    <div class="relative">
+                        <div class="relative h-[400px] lg:h-[500px] w-full rounded-3xl overflow-hidden glow-amber">
+                            <div class="absolute inset-0 bg-gradient-to-t from-bg-main via-transparent to-transparent z-10"></div>
+                            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                        </div>
+                        <!-- Floating badge -->
+                        <div class="absolute -bottom-4 -left-4 bg-bg-secondary border border-gray-700 rounded-2xl p-4 shadow-xl">
+                            <div class="flex items-center gap-3">
+                                <div class="flex text-yellow-400">
+                                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-white">4.7</p>
+                                    <p class="text-xs text-gray-400">Google Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Stats Section -->
+        <section class="border-y border-gray-700/50 bg-bg-secondary py-12">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
+                    <div class="flex flex-col items-center gap-2">
+                        <p class="text-4xl font-display text-primary">500+</p>
+                        <p class="text-sm text-gray-400 en-only">Happy Customers</p>
+                        <p class="text-sm text-gray-400 ur-only font-urdu">خوش گاہک</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <p class="text-4xl font-display text-primary">50+</p>
+                        <p class="text-sm text-gray-400 en-only">Tyre Brands</p>
+                        <p class="text-sm text-gray-400 ur-only font-urdu">ٹائر برانڈز</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <p class="text-4xl font-display text-primary">100%</p>
+                        <p class="text-sm text-gray-400 en-only">Quality Assured</p>
+                        <p class="text-sm text-gray-400 ur-only font-urdu">کوالٹی یقینی</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <p class="text-4xl font-display text-primary">4.7</p>
+                        <p class="text-sm text-gray-400 en-only">Google Rating</p>
+                        <p class="text-sm text-gray-400 ur-only font-urdu">گوگل ریٹنگ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Products Section -->
+        <section id="products" class="py-20 bg-bg-main">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-14">
+                    <span class="text-primary font-bold uppercase tracking-wider text-sm">What We Offer</span>
+                    <h2 class="text-3xl sm:text-4xl font-display tracking-tight text-white mt-4 mb-4 en-only">Our Products</h2>
+                    <h2 class="text-3xl sm:text-4xl font-display tracking-tight text-white mt-4 mb-4 ur-only font-urdu">ہماری مصنوعات</h2>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto en-only">
+                        Wide range of new and used tyres, alloy rims for all vehicle types at competitive prices.
+                    </p>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto ur-only font-urdu">
+                        تمام گاڑیوں کے لیے نئے اور پرانے ٹائرز، ایلوئے رمز کا وسیع ذخیرہ مسابقتی قیمتوں پر۔
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Product 1: New Tyres -->
+                    <div class="group flex flex-col overflow-hidden rounded-2xl bg-bg-secondary border border-gray-700/50 hover:border-primary/50 transition-all hover:-translate-y-1">
+                        <div class="aspect-square w-full bg-surface overflow-hidden relative">
+                            <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                            <div class="absolute top-3 right-3 bg-primary text-bg-main text-xs font-bold px-3 py-1 rounded-full">
+                                New
+                            </div>
+                        </div>
+                        <div class="p-5 flex flex-col flex-1">
+                            <h3 class="text-lg font-bold text-white mb-2 en-only">New Tyres</h3>
+                            <h3 class="text-lg font-bold text-white mb-2 ur-only font-urdu">نئے ٹائرز</h3>
+                            <p class="text-sm text-gray-400 en-only">Top brands including Bridgestone, Yokohama, General, and local options.</p>
+                            <p class="text-sm text-gray-400 ur-only font-urdu">برجسٹون، یوکوہاما، جنرل، اور مقامی برانڈز دستیاب۔</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2: Used Tyres -->
+                    <div class="group flex flex-col overflow-hidden rounded-2xl bg-bg-secondary border border-gray-700/50 hover:border-primary/50 transition-all hover:-translate-y-1">
+                        <div class="aspect-square w-full bg-surface overflow-hidden relative">
+                            <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                            <div class="absolute top-3 right-3 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                                Budget
+                            </div>
+                        </div>
+                        <div class="p-5 flex flex-col flex-1">
+                            <h3 class="text-lg font-bold text-white mb-2 en-only">Used Tyres</h3>
+                            <h3 class="text-lg font-bold text-white mb-2 ur-only font-urdu">پرانے ٹائرز</h3>
+                            <p class="text-sm text-gray-400 en-only">Quality imported used tyres with good tread life at affordable prices.</p>
+                            <p class="text-sm text-gray-400 ur-only font-urdu">اچھی کوالٹی کے درآمد شدہ پرانے ٹائرز سستی قیمتوں پر۔</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3: Alloy Rims -->
+                    <div class="group flex flex-col overflow-hidden rounded-2xl bg-bg-secondary border border-gray-700/50 hover:border-primary/50 transition-all hover:-translate-y-1">
+                        <div class="aspect-square w-full bg-surface overflow-hidden relative">
+                            <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1611821064430-0d40291d0f0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                            <div class="absolute top-3 right-3 bg-primary text-bg-main text-xs font-bold px-3 py-1 rounded-full">
+                                Premium
+                            </div>
+                        </div>
+                        <div class="p-5 flex flex-col flex-1">
+                            <h3 class="text-lg font-bold text-white mb-2 en-only">Alloy Rims</h3>
+                            <h3 class="text-lg font-bold text-white mb-2 ur-only font-urdu">ایلوئے رمز</h3>
+                            <p class="text-sm text-gray-400 en-only">Stylish alloy wheels in various sizes (13" to 20") for all car models.</p>
+                            <p class="text-sm text-gray-400 ur-only font-urdu">تمام گاڑیوں کے لیے مختلف سائز (13" سے 20") میں اسٹائلش ایلوئے وہیلز۔</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4: Steel Rims -->
+                    <div class="group flex flex-col overflow-hidden rounded-2xl bg-bg-secondary border border-gray-700/50 hover:border-primary/50 transition-all hover:-translate-y-1">
+                        <div class="aspect-square w-full bg-surface overflow-hidden relative">
+                            <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                            <div class="absolute top-3 right-3 bg-gray-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                                Durable
+                            </div>
+                        </div>
+                        <div class="p-5 flex flex-col flex-1">
+                            <h3 class="text-lg font-bold text-white mb-2 en-only">Steel Rims</h3>
+                            <h3 class="text-lg font-bold text-white mb-2 ur-only font-urdu">سٹیل رمز</h3>
+                            <p class="text-sm text-gray-400 en-only">Durable steel rims for heavy-duty use, trucks, and commercial vehicles.</p>
+                            <p class="text-sm text-gray-400 ur-only font-urdu">ٹرکوں اور تجارتی گاڑیوں کے لیے مضبوط سٹیل رمز۔</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-bg-secondary">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-14">
+                    <span class="text-primary font-bold uppercase tracking-wider text-sm">Professional Care</span>
+                    <h2 class="text-3xl sm:text-4xl font-display tracking-tight text-white mt-4 mb-4 en-only">Our Services</h2>
+                    <h2 class="text-3xl sm:text-4xl font-display tracking-tight text-white mt-4 mb-4 ur-only font-urdu">ہماری خدمات</h2>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto en-only">
+                        Complete tyre and rim services by experienced professionals.
+                    </p>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto ur-only font-urdu">
+                        تجربہ کار ماہرین کی جانب سے مکمل ٹائر اور رم خدمات۔
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Service 1 -->
+                    <div class="bg-bg-main border border-gray-700/50 rounded-2xl p-6 hover:border-primary/30 transition-colors">
+                        <div class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-5">
+                            <span class="material-symbols-outlined text-primary text-2xl">build</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 en-only">Tyre Fitting</h3>
+                        <h3 class="text-xl font-bold text-white mb-3 ur-only font-urdu">ٹائر فٹنگ</h3>
+                        <p class="text-gray-400 en-only">Professional mounting and fitting of tyres on all rim types.</p>
+                        <p class="text-gray-400 ur-only font-urdu">تمام رم اقسام پر ٹائرز کی پیشہ ورانہ فٹنگ۔</p>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="bg-bg-main border border-gray-700/50 rounded-2xl p-6 hover:border-primary/30 transition-colors">
+                        <div class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-5">
+                            <span class="material-symbols-outlined text-primary text-2xl">sync</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 en-only">Wheel Balancing</h3>
+                        <h3 class="text-xl font-bold text-white mb-3 ur-only font-urdu">وہیل بیلنسنگ</h3>
+                        <p class="text-gray-400 en-only">Computerized wheel balancing for smooth and safe driving.</p>
+                        <p class="text-gray-400 ur-only font-urdu">ہموار اور محفوظ ڈرائیونگ کے لیے کمپیوٹرائزڈ وہیل بیلنسنگ۔</p>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="bg-bg-main border border-gray-700/50 rounded-2xl p-6 hover:border-primary/30 transition-colors">
+                        <div class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-5">
+                            <span class="material-symbols-outlined text-primary text-2xl">handyman</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 en-only">Puncture Repair</h3>
+                        <h3 class="text-xl font-bold text-white mb-3 ur-only font-urdu">پنکچر مرمت</h3>
+                        <p class="text-gray-400 en-only">Quick and reliable puncture repair for tubeless and tube tyres.</p>
+                        <p class="text-gray-400 ur-only font-urdu">ٹیوب لیس اور ٹیوب ٹائرز کی فوری پنکچر مرمت۔</p>
+                    </div>
+                    
+                    <!-- Service 4 -->
+                    <div class="bg-bg-main border border-gray-700/50 rounded-2xl p-6 hover:border-primary/30 transition-colors">
+                        <div class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-5">
+                            <span class="material-symbols-outlined text-primary text-2xl">straighten</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 en-only">Wheel Alignment</h3>
+                        <h3 class="text-xl font-bold text-white mb-3 ur-only font-urdu">وہیل الائنمنٹ</h3>
+                        <p class="text-gray-400 en-only">Precise alignment to extend tyre life and improve handling.</p>
+                        <p class="text-gray-400 ur-only font-urdu">ٹائر کی عمر بڑھانے اور ہینڈلنگ بہتر کرنے کے لیے الائنمنٹ۔</p>
+                    </div>
+                    
+                    <!-- Service 5 -->
+                    <div class="bg-bg-main border border-gray-700/50 rounded-2xl p-6 hover:border-primary/30 transition-colors">
+                        <div class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-5">
+                            <span class="material-symbols-outlined text-primary text-2xl">propane</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 en-only">Nitrogen Filling</h3>
+                        <h3 class="text-xl font-bold text-white mb-3 ur-only font-urdu">نائٹروجن فلنگ</h3>
+                        <p class="text-gray-400 en-only">Nitrogen gas filling for better pressure retention and cooler running.</p>
+                        <p class="text-gray-400 ur-only font-urdu">بہتر پریشر برقرار رکھنے کے لیے نائٹروجن گیس۔</p>
+                    </div>
+                    
+                    <!-- Service 6 -->
+                    <div class="bg-bg-main border border-gray-700/50 rounded-2xl p-6 hover:border-primary/30 transition-colors">
+                        <div class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-5">
+                            <span class="material-symbols-outlined text-primary text-2xl">local_shipping</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 en-only">Home Delivery</h3>
+                        <h3 class="text-xl font-bold text-white mb-3 ur-only font-urdu">ہوم ڈلیوری</h3>
+                        <p class="text-gray-400 en-only">Convenient delivery of tyres and rims to your doorstep.</p>
+                        <p class="text-gray-400 ur-only font-urdu">ٹائرز اور رمز کی آپ کے گھر تک آسان ڈلیوری۔</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Reviews/Testimonials Section -->
+        <section id="reviews" class="py-20 bg-bg-main tire-pattern">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-14">
+                    <span class="text-primary font-bold uppercase tracking-wider text-sm">Customer Love</span>
+                    <h2 class="text-3xl sm:text-4xl font-display tracking-tight text-white mt-4 mb-4 en-only">What Our Customers Say</h2>
+                    <h2 class="text-3xl sm:text-4xl font-display tracking-tight text-white mt-4 mb-4 ur-only font-urdu">ہمارے گاہک کیا کہتے ہیں</h2>
+                    <div class="flex items-center justify-center gap-2 mt-4">
+                        <div class="flex text-yellow-400">
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+                        </div>
+                        <span class="text-white font-bold">4.7</span>
+                        <span class="text-gray-400 en-only">from 18 Google Reviews</span>
+                        <span class="text-gray-400 ur-only font-urdu">18 گوگل جائزوں سے</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Review 1 -->
+                    <div class="bg-bg-secondary border border-gray-700/50 rounded-2xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-lg">RS</div>
+                            <div>
+                                <p class="font-bold text-white">Rana Shahmir</p>
+                                <div class="flex text-yellow-400 text-sm">
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"They have great service and gave us excellent deal and good quality product. Highly recommended!"</p>
+                        <p class="text-xs text-gray-500 mt-3 flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">schedule</span>
+                            2 months ago
+                        </p>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div class="bg-bg-secondary border border-gray-700/50 rounded-2xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 font-bold text-lg">AM</div>
+                            <div>
+                                <p class="font-bold text-white">Adil Malik</p>
+                                <div class="flex text-yellow-400 text-sm">
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"Polite and professional team, good service, professional people, affordable rates. Highly recommended!"</p>
+                        <p class="text-xs text-gray-500 mt-3 flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">schedule</span>
+                            2 months ago
+                        </p>
+                    </div>
+                    
+                    <!-- Review 3 -->
+                    <div class="bg-bg-secondary border border-gray-700/50 rounded-2xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-lg">GC</div>
+                            <div>
+                                <p class="font-bold text-white">Gulsher Cheema</p>
+                                <div class="flex text-yellow-400 text-sm">
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"Wholesale rate and very reasonable rates. Preferred shop for tyres!"</p>
+                        <p class="text-xs text-gray-500 mt-3 flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">schedule</span>
+                            3 months ago
+                        </p>
+                    </div>
+                    
+                    <!-- Review 4 -->
+                    <div class="bg-bg-secondary border border-gray-700/50 rounded-2xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 font-bold text-lg">AS</div>
+                            <div>
+                                <p class="font-bold text-white">Anjam Shahzad</p>
+                                <div class="flex text-yellow-400 text-sm">
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"Just purchased tyres from Chattha Brothers Rawalpindi. Highly recommended!"</p>
+                        <p class="text-xs text-gray-500 mt-3 flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">schedule</span>
+                            3 months ago
+                        </p>
+                    </div>
+                    
+                    <!-- Review 5 -->
+                    <div class="bg-bg-secondary border border-gray-700/50 rounded-2xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center text-red-400 font-bold text-lg">IA</div>
+                            <div>
+                                <p class="font-bold text-white">Imran Anjum</p>
+                                <div class="flex text-yellow-400 text-sm">
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"We had a great experience of services and their attitude converted me to a happy customer."</p>
+                        <p class="text-xs text-gray-500 mt-3 flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">schedule</span>
+                            3 years ago
+                        </p>
+                    </div>
+                    
+                    <!-- Review 6 -->
+                    <div class="bg-bg-secondary border border-gray-700/50 rounded-2xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-400 font-bold text-lg">UC</div>
+                            <div>
+                                <p class="font-bold text-white">Umair Ch</p>
+                                <div class="flex text-yellow-400 text-sm">
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"Very honest dealing, good location. Trusted shop for tyres and rims."</p>
+                        <p class="text-xs text-gray-500 mt-3 flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">schedule</span>
+                            a year ago
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- View All Reviews Link -->
+                <div class="text-center mt-10">
+                    <a href="https://maps.app.goo.gl/RU72CJ3dF3KVsAkR6" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-primary hover:text-primary-dark font-semibold transition-colors">
+                        <span class="en-only">View All 18 Reviews on Google</span>
+                        <span class="ur-only font-urdu">گوگل پر تمام 18 جائزے دیکھیں</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Location & Contact Section -->
+        <section id="contact" class="py-20 bg-bg-secondary">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-14">
+                    <span class="text-primary font-bold uppercase tracking-wider text-sm">Find Us</span>
+                    <h2 class="text-3xl sm:text-4xl font-display tracking-tight text-white mt-4 mb-4 en-only">Visit Our Shop</h2>
+                    <h2 class="text-3xl sm:text-4xl font-display tracking-tight text-white mt-4 mb-4 ur-only font-urdu">ہماری دکان پر آئیں</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Map -->
+                    <div class="bg-bg-main rounded-2xl overflow-hidden border border-gray-700/50 h-[400px]">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5!2d73.0769!3d33.5778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzQwLjEiTiA3M8KwMDQnMzYuOSJF!5e0!3m2!1sen!2s&q=Chattha+Brothers+Rims+Tyres+Rawalpindi" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Chattha Brothers Location Map"
+                            class="grayscale hover:grayscale-0 transition-all duration-500">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="flex flex-col gap-6">
+                        <!-- Address Card -->
+                        <div class="bg-bg-main border border-gray-700/50 rounded-2xl p-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0">
+                                    <span class="material-symbols-outlined text-primary text-xl">location_on</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-white mb-2 en-only">Address</h3>
+                                    <h3 class="font-bold text-white mb-2 ur-only font-urdu">پتہ</h3>
+                                    <p class="text-gray-400 en-only">Sultan ka Khuu, Main Chaklala Road,<br/>Chah Sultan, Rawalpindi 46000, Pakistan</p>
+                                    <p class="text-gray-400 ur-only font-urdu">سلطان کا کھو، مین چکلالہ روڈ،<br/>چاہ سلطان، راولپنڈی 46000، پاکستان</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Hours Card -->
+                        <div class="bg-bg-main border border-gray-700/50 rounded-2xl p-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0">
+                                    <span class="material-symbols-outlined text-primary text-xl">schedule</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-white mb-2 en-only">Business Hours</h3>
+                                    <h3 class="font-bold text-white mb-2 ur-only font-urdu">کاروباری اوقات</h3>
+                                    <p class="text-gray-400 en-only">Saturday - Thursday: 10:00 AM - 10:00 PM<br/>
+                                    <span class="text-red-400">Friday: Closed</span></p>
+                                    <p class="text-gray-400 ur-only font-urdu">ہفتہ سے جمعرات: صبح 10 بجے سے رات 10 بجے<br/>
+                                    <span class="text-red-400">جمعہ: بند</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Buttons -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <a href="tel:+923335167974" class="flex items-center justify-center gap-3 bg-primary hover:bg-primary-dark text-bg-main font-bold py-4 px-6 rounded-xl transition-all hover:scale-105">
+                                <span class="material-symbols-outlined">call</span>
+                                <span dir="ltr">+92 333 5167974</span>
+                            </a>
+                            <a href="https://wa.me/923335167974" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-xl transition-all hover:scale-105">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                WhatsApp
+                            </a>
+                        </div>
+                        
+                        <!-- Directions Button -->
+                        <a href="https://maps.app.goo.gl/RU72CJ3dF3KVsAkR6" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 bg-surface hover:bg-gray-600 text-white font-bold py-4 px-6 rounded-xl transition-colors border border-gray-700">
+                            <span class="material-symbols-outlined">directions</span>
+                            <span class="en-only">Get Directions on Google Maps</span>
+                            <span class="ur-only font-urdu">گوگل میپس پر سمت حاصل کریں</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-bg-main border-t border-gray-700/50 py-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-bg-main text-xl">tire_repair</span>
+                    </div>
+                    <div>
+                        <span class="font-bold text-white en-only">Chattha Brothers</span>
+                        <span class="font-bold text-white ur-only font-urdu">چٹھہ برادرز</span>
+                        <p class="text-xs text-gray-400 en-only">Rims & Tyres Dealer</p>
+                        <p class="text-xs text-gray-400 ur-only font-urdu">رمز اینڈ ٹائرز ڈیلر</p>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="flex gap-6 text-sm">
+                    <a href="#products" class="text-gray-400 hover:text-primary transition-colors en-only">Products</a>
+                    <a href="#products" class="text-gray-400 hover:text-primary transition-colors ur-only font-urdu">مصنوعات</a>
+                    <a href="#services" class="text-gray-400 hover:text-primary transition-colors en-only">Services</a>
+                    <a href="#services" class="text-gray-400 hover:text-primary transition-colors ur-only font-urdu">خدمات</a>
+                    <a href="#contact" class="text-gray-400 hover:text-primary transition-colors en-only">Contact</a>
+                    <a href="#contact" class="text-gray-400 hover:text-primary transition-colors ur-only font-urdu">رابطہ</a>
+                </div>
+                
+                <!-- Copyright -->
+                <p class="text-sm text-gray-500">
+                    © 2026 Chattha Brothers. <span class="en-only">All rights reserved.</span><span class="ur-only font-urdu">جملہ حقوق محفوظ ہیں۔</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923335167974" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-40 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg shadow-green-500/30 transition-all hover:scale-110">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+    
+    <!-- JavaScript -->
+    <script>
+        // Language Toggle
+        const htmlRoot = document.getElementById('html-root');
+        const langToggle = document.getElementById('lang-toggle');
+        
+        // Check for saved language preference
+        const savedLang = localStorage.getItem('chattha-lang') || 'en';
+        htmlRoot.setAttribute('lang', savedLang);
+        
+        langToggle.addEventListener('click', () => {
+            const currentLang = htmlRoot.getAttribute('lang');
+            const newLang = currentLang === 'en' ? 'ur' : 'en';
+            htmlRoot.setAttribute('lang', newLang);
+            localStorage.setItem('chattha-lang', newLang);
+        });
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
